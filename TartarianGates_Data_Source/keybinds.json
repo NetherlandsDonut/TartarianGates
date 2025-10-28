@@ -1,0 +1,50 @@
+{
+  "Menu / Back": {
+    "group": "General",
+    "key": 27
+  },
+  "Up": {
+    "group": "General",
+    "key": 273
+  },
+  "Right": {
+    "group": "General",
+    "key": 275
+  },
+  "Down": {
+    "group": "General",
+    "key": 274
+  },
+  "Left": {
+    "group": "General",
+    "key": 276
+  },
+  "Increase": {
+    "group": "General",
+    "key": 270
+  },
+  "Decrease": {
+    "group": "General",
+    "key": 269
+  },
+  "Move north": {
+    "group": "General",
+    "key": 119
+  },
+  "Move west": {
+    "group": "General",
+    "key": 97
+  },
+  "Move south": {
+    "group": "General",
+    "key": 115
+  },
+  "Move east": {
+    "group": "General",
+    "key": 100
+  },
+  "Switch tab": {
+    "group": "General",
+    "key": 9
+  }
+}

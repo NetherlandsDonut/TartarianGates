@@ -1,0 +1,243 @@
+[
+  {
+    "name": "High Man",
+    "starting": true,
+    "stats": {
+      "Size": 3,
+      "Hit Points": 42,
+      "Strength": 13,
+      "Speed": 14
+    },
+    "naturalResistances": {
+      "Physical": 10,
+      "Magic": 11,
+      "Fire": 9,
+      "Lightning": 8,
+      "Poison": 12,
+      "Frostbite": 11
+    },
+    "attitude": {
+      "High Man": 1,
+      "Dwarf": -1,
+      "High Elf": -2,
+      "Dark Elf": 0,
+      "Lizardman": -1,
+      "Orc": -1,
+      "Troll": -1,
+      "Beastman": -1
+    }
+  },
+  {
+    "name": "Dwarf",
+    "starting": true,
+    "stats": {
+      "Size": 2,
+      "Hit Points": 53,
+      "Strength": 16,
+      "Speed": 12
+    },
+    "naturalResistances": {
+      "Physical": 10,
+      "Magic": 15,
+      "Fire": 15,
+      "Lightning": 10,
+      "Poison": 21,
+      "Frostbite": 12
+    },
+    "attitude": {
+      "High Man": -1,
+      "Dwarf": 1,
+      "High Elf": -4,
+      "Dark Elf": -3,
+      "Lizardman": -1,
+      "Orc": -2,
+      "Troll": -3,
+      "Beastman": -2
+    }
+  },
+  {
+    "name": "High Elf",
+    "starting": true,
+    "stats": {
+      "Size": 3,
+      "Hit Points": 44,
+      "Strength": 13,
+      "Speed": 16
+    },
+    "naturalResistances": {
+      "Physical": 10,
+      "Magic": 13,
+      "Fire": 10,
+      "Lightning": 8,
+      "Poison": 13,
+      "Frostbite": 10
+    },
+    "attitude": {
+      "High Man": -2,
+      "Dwarf": -4,
+      "High Elf": 1,
+      "Dark Elf": -3,
+      "Lizardman": -2,
+      "Orc": -2,
+      "Troll": -3,
+      "Beastman": -2
+    }
+  },
+  {
+    "name": "Dark Elf",
+    "starting": true,
+    "stats": {
+      "Size": 3,
+      "Hit Points": 44,
+      "Strength": 13,
+      "Speed": 16
+    },
+    "naturalResistances": {
+      "Physical": 10,
+      "Magic": 13,
+      "Fire": 10,
+      "Lightning": 8,
+      "Poison": 13,
+      "Frostbite": 10
+    },
+    "attitude": {
+      "High Man": -1,
+      "Dwarf": -3,
+      "High Elf": -3,
+      "Dark Elf": 0,
+      "Lizardman": -1,
+      "Orc": -3,
+      "Troll": -4,
+      "Beastman": -2
+    }
+  },
+  {
+    "name": "Lizardman",
+    "starting": true,
+    "stats": {
+      "Size": 3,
+      "Hit Points": 47,
+      "Strength": 13,
+      "Speed": 16
+    },
+    "naturalResistances": {
+      "Physical": 13,
+      "Magic": 12,
+      "Fire": 14,
+      "Lightning": 9,
+      "Poison": 76,
+      "Frostbite": 2
+    },
+    "attitude": {
+      "High Man": -1,
+      "Dwarf": -1,
+      "High Elf": -2,
+      "Dark Elf": -1,
+      "Lizardman": 2,
+      "Orc": -1,
+      "Troll": -1,
+      "Beastman": -1
+    }
+  },
+  {
+    "name": "Orc",
+    "starting": true,
+    "stats": {
+      "Size": 3,
+      "Hit Points": 51,
+      "Strength": 15,
+      "Speed": 14
+    },
+    "naturalResistances": {
+      "Physical": 10,
+      "Magic": 11,
+      "Fire": 10,
+      "Lightning": 8,
+      "Poison": 18,
+      "Frostbite": 15
+    },
+    "attitude": {
+      "High Man": -1,
+      "Dwarf": -2,
+      "High Elf": -2,
+      "Dark Elf": -3,
+      "Lizardman": -1,
+      "Orc": 2,
+      "Troll": 0,
+      "Beastman": -1
+    }
+  },
+  {
+    "name": "Troll",
+    "starting": true,
+    "stats": {
+      "Size": 4,
+      "Hit Points": 63,
+      "Strength": 18,
+      "Speed": 13
+    },
+    "naturalResistances": {
+      "Physical": 14,
+      "Magic": 12,
+      "Fire": 4,
+      "Lightning": 7,
+      "Poison": 41,
+      "Frostbite": 3
+    },
+    "attitude": {
+      "High Man": -1,
+      "Dwarf": -3,
+      "High Elf": -3,
+      "Dark Elf": -4,
+      "Lizardman": -1,
+      "Orc": 1,
+      "Troll": 3,
+      "Beastman": -2
+    }
+  },
+  {
+    "name": "Beastman",
+    "starting": true,
+    "stats": {
+      "Size": 3,
+      "Hit Points": 45,
+      "Strength": 14,
+      "Speed": 17
+    },
+    "naturalResistances": {
+      "Physical": 11,
+      "Magic": 11,
+      "Fire": 9,
+      "Lightning": 8,
+      "Poison": 12,
+      "Frostbite": 21
+    },
+    "attitude": {
+      "High Man": -1,
+      "Dwarf": -2,
+      "High Elf": -2,
+      "Dark Elf": -2,
+      "Lizardman": -1,
+      "Orc": -1,
+      "Troll": -2,
+      "Beastman": 1
+    }
+  },
+  {
+    "name": "Red Dragon",
+    "stats": {
+      "Size": 6,
+      "Hit Points": 367,
+      "Strength": 14,
+      "Speed": 17
+    },
+    "naturalResistances": {
+      "Physical": 11,
+      "Magic": 11,
+      "Fire": 70,
+      "Lightning": 8,
+      "Poison": 12,
+      "Frostbite": 21
+    }
+  }
+]

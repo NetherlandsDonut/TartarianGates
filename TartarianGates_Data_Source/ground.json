@@ -1,0 +1,291 @@
+[
+  {
+    "id": 1,
+    "name": "Water",
+    "liquid": "Water",
+    "symbol": "≈",
+    "foreColor": "41:94:155",
+    "fillColor": "0:0:0"
+  },
+  {
+    "id": 2,
+    "name": "Soil",
+    "symbol": "‘’‚‛“”„‟",
+    "foreColor": "142:90:68",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Soil",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sand",
+    "symbol": "‚“‟„‘’”‛",
+    "foreColor": "199:180:57",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Sand",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Peridotite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "154:151:98",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Peridotite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Gabbro",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "156:150:126",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Gabbro",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Diorite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "151:151:153",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Diorite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Granite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "214:158:131",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Granite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Serpentinate",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "90:117:112",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Serpentinate",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Quartzite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "156:157:151",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Quartzite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Schist",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "175:159:134",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Schist",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Marble",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "228:202:169",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Marble",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Lava",
+    "liquid": "Lava",
+    "symbol": "≈",
+    "foreColor": "153:48:41",
+    "fillColor": "0:0:0"
+  },
+  {
+    "id": 241,
+    "name": "Slate",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "151:151:153",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Slate",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Gneiss",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "154:141:109",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Gneiss",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Andesite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "191:179:165",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Andesite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Basalt",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "104:91:85",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Basalt",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Komatiite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "176:126:129",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Komatiite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Rhyolite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "128:111:105",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Rhyolite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Conglomerate",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "195:194:192",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Conglomerate",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Dolomite",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "168:166:171",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Dolomite",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Limestone",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "203:194:153",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Limestone",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Sandstone",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "236:210:159",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Sandstone",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Shale",
+    "symbol": "‚„’“”‘‛‟",
+    "foreColor": "155:151:148",
+    "fillColor": "0:0:0",
+    "yields": [
+      {
+        "name": "Shale",
+        "amount": 1
+      }
+    ]
+  }
+]

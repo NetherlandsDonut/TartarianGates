@@ -1,0 +1,5757 @@
+[
+  {
+    "name": "Airshrine",
+    "convertion": {
+      "Door #1": 300,
+      "Door #2": 301,
+      "Door #3": 302,
+      "Wall #1": 200,
+      "Wall #2": 201,
+      "Wall #3": 202,
+      "Floor #1": 4,
+      "Floor #2": 5,
+      "Floor #3": 6
+    },
+    "rooms": [
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bloodcastle",
+    "convertion": {
+      "Door #1": 300,
+      "Door #2": 301,
+      "Door #3": 302,
+      "Wall #1": 200,
+      "Wall #2": 201,
+      "Wall #3": 202,
+      "Floor #1": 4,
+      "Floor #2": 5,
+      "Floor #3": 6
+    },
+    "rooms": [
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Treasury",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Elite",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cave",
+    "convertion": {
+      "Door #1": 300,
+      "Door #2": 301,
+      "Door #3": 302,
+      "Wall #1": 200,
+      "Wall #2": 201,
+      "Wall #3": 202,
+      "Floor #1": 4,
+      "Floor #2": 5,
+      "Floor #3": 6
+    },
+    "rooms": [
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crypt",
+    "convertion": {
+      "Door #1": 300,
+      "Door #2": 301,
+      "Door #3": 302,
+      "Wall #1": 200,
+      "Wall #2": 201,
+      "Wall #3": 202,
+      "Floor #1": 4,
+      "Floor #2": 5,
+      "Floor #3": 6
+    },
+    "rooms": [
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Room",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {},
+            {},
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {}
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {}
+          ],
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {},
+            {},
+            {}
+          ]
+        ]
+      },
+      {
+        "type": "Hall",
+        "cells": [
+          [
+            {},
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Floor #1",
+              "prop": "Door #1",
+              "meta": "Connection"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Enemies"
+            },
+            {
+              "terrain": "Floor #1",
+              "meta": "Treasure"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ],
+          [
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            },
+            {
+              "terrain": "Wall #1"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "soundEffects": true,
+  "runInBackground": true,
+  "pixelPerfectVision": true,
+  "showGrid": true,
+  "includeCorners": true,
+  "showTurn": true
+}

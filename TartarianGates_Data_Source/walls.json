@@ -1,0 +1,754 @@
+[
+  {
+    "id": 2,
+    "name": "Soil",
+    "symbol": "ċ",
+    "foreColor": "142:90:68",
+    "fillColor": "91:58:44",
+    "yields": [
+      {
+        "name": "Soil",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Apple Tree",
+    "seeThrough": true,
+    "isTree": true,
+    "symbol": "○",
+    "foreColor": "160:118:75",
+    "fillColor": "67:35:24",
+    "yields": [
+      {
+        "name": "Apple Tree Log",
+        "amount": 4
+      },
+      {
+        "name": "Apple Tree Log",
+        "amount": 1,
+        "chance": "75%"
+      },
+      {
+        "name": "Apple Tree Log",
+        "amount": 1,
+        "chance": "50%"
+      },
+      {
+        "name": "Apple Tree Log",
+        "amount": 1,
+        "chance": "25%"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Birch Tree",
+    "seeThrough": true,
+    "isTree": true,
+    "symbol": "○",
+    "foreColor": "206:206:208",
+    "fillColor": "79:66:46",
+    "yields": [
+      {
+        "name": "Birch Tree Log",
+        "amount": 4
+      },
+      {
+        "name": "Birch Tree Log",
+        "amount": 1,
+        "chance": "75%"
+      },
+      {
+        "name": "Birch Tree Log",
+        "amount": 1,
+        "chance": "50%"
+      },
+      {
+        "name": "Birch Tree Log",
+        "amount": 1,
+        "chance": "25%"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Chalcocite",
+    "symbol": "£",
+    "foreColor": "141:149:151",
+    "fillColor": "78:90:88",
+    "yields": [
+      {
+        "name": "Chalcocite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Bornite",
+    "symbol": "£",
+    "foreColor": "203:193:158",
+    "fillColor": "177:121:70",
+    "yields": [
+      {
+        "name": "Bornite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "name": "Malachite",
+    "symbol": "£",
+    "foreColor": "17:196:156",
+    "fillColor": "44:86:76",
+    "yields": [
+      {
+        "name": "Malachite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Sphalerite",
+    "symbol": "£",
+    "foreColor": "134:132:112",
+    "fillColor": "73:71:67",
+    "yields": [
+      {
+        "name": "Sphalerite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Galena",
+    "symbol": "£",
+    "foreColor": "178:179:185",
+    "fillColor": "94:94:96",
+    "yields": [
+      {
+        "name": "Galena",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Pyrite",
+    "symbol": "£",
+    "foreColor": "184:178:142",
+    "fillColor": "128:110:60",
+    "yields": [
+      {
+        "name": "Pyrite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Argentite",
+    "symbol": "£",
+    "foreColor": "172:193:210",
+    "fillColor": "82:90:93",
+    "yields": [
+      {
+        "name": "Argentite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Bismuthinite",
+    "symbol": "£",
+    "foreColor": "188:188:188",
+    "fillColor": "100:114:91",
+    "yields": [
+      {
+        "name": "Bismuthinite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Native Copper",
+    "symbol": "£",
+    "foreColor": "230:149:84",
+    "fillColor": "108:55:15",
+    "yields": [
+      {
+        "name": "Native Copper",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Native Gold",
+    "symbol": "£",
+    "foreColor": "218:191:76",
+    "fillColor": "161:135:51",
+    "yields": [
+      {
+        "name": "Native Gold",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Hematite",
+    "symbol": "£",
+    "foreColor": "182:126:103",
+    "fillColor": "122:93:89",
+    "yields": [
+      {
+        "name": "Hematite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Limonite",
+    "symbol": "£",
+    "foreColor": "205:132:91",
+    "fillColor": "107:71:59",
+    "yields": [
+      {
+        "name": "Limonite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Cinnabar",
+    "symbol": "£",
+    "foreColor": "243:57:45",
+    "fillColor": "138:63:34",
+    "yields": [
+      {
+        "name": "Cinnabar",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Native Platinum",
+    "symbol": "£",
+    "foreColor": "168:166:154",
+    "fillColor": "92:89:82",
+    "yields": [
+      {
+        "name": "Native Platinum",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Cassiterite",
+    "symbol": "£",
+    "foreColor": "161:159:160",
+    "fillColor": "134:107:96",
+    "yields": [
+      {
+        "name": "Cassiterite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Uraninite",
+    "symbol": "£",
+    "foreColor": "237:194:97",
+    "fillColor": "63:71:61",
+    "yields": [
+      {
+        "name": "Uraninite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Shale",
+    "symbol": "%",
+    "foreColor": "155:151:148",
+    "fillColor": "80:79:84",
+    "yields": [
+      {
+        "name": "Shale",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Cobaltite",
+    "symbol": "£",
+    "foreColor": "217:235:247",
+    "fillColor": "103:121:131",
+    "yields": [
+      {
+        "name": "Cobaltite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Ilmenite",
+    "symbol": "£",
+    "foreColor": "140:132:156",
+    "fillColor": "89:77:99",
+    "yields": [
+      {
+        "name": "Ilmenite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Rhodium",
+    "symbol": "£",
+    "foreColor": "145:138:136",
+    "fillColor": "82:73:72",
+    "yields": [
+      {
+        "name": "Rhodium",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Palladium",
+    "symbol": "£",
+    "foreColor": "194:199:213",
+    "fillColor": "134:152:164",
+    "yields": [
+      {
+        "name": "Palladium",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "name": "Chromite",
+    "symbol": "£",
+    "foreColor": "132:178:139",
+    "fillColor": "63:76:82",
+    "yields": [
+      {
+        "name": "Chromite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Magnetite",
+    "symbol": "£",
+    "foreColor": "126:121:101",
+    "fillColor": "71:68:63",
+    "yields": [
+      {
+        "name": "Magnetite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Wolframite",
+    "symbol": "£",
+    "foreColor": "197:188:166",
+    "fillColor": "113:103:96",
+    "yields": [
+      {
+        "name": "Wolframite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Scheelite",
+    "symbol": "£",
+    "foreColor": "193:154:95",
+    "fillColor": "133:93:21",
+    "yields": [
+      {
+        "name": "Scheelite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "name": "Scheelite",
+    "symbol": "£",
+    "foreColor": "193:154:95",
+    "fillColor": "133:93:21",
+    "yields": [
+      {
+        "name": "Scheelite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Fluorite",
+    "symbol": "£",
+    "foreColor": "115:139:141",
+    "fillColor": "76:66:74",
+    "yields": [
+      {
+        "name": "Fluorite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Electrum",
+    "symbol": "£",
+    "foreColor": "251:208:103",
+    "fillColor": "188:157:137",
+    "yields": [
+      {
+        "name": "Electrum",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Azurite",
+    "symbol": "£",
+    "foreColor": "63:71:196",
+    "fillColor": "32:36:83",
+    "yields": [
+      {
+        "name": "Azurite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Azurite",
+    "symbol": "£",
+    "foreColor": "63:71:196",
+    "fillColor": "32:36:83",
+    "yields": [
+      {
+        "name": "Azurite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Siderite",
+    "symbol": "£",
+    "foreColor": "215:177:104",
+    "fillColor": "151:108:53",
+    "yields": [
+      {
+        "name": "Siderite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Barite",
+    "symbol": "£",
+    "foreColor": "200:182:162",
+    "fillColor": "154:111:76",
+    "yields": [
+      {
+        "name": "Barite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Manganese",
+    "symbol": "£",
+    "foreColor": "170:162:128",
+    "fillColor": "115:104:71",
+    "yields": [
+      {
+        "name": "Manganese",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "name": "Peridotite",
+    "symbol": "%",
+    "foreColor": "154:151:98",
+    "fillColor": "89:95:49",
+    "yields": [
+      {
+        "name": "Peridotite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Gabbro",
+    "symbol": "%",
+    "foreColor": "156:150:126",
+    "fillColor": "105:101:76",
+    "yields": [
+      {
+        "name": "Gabbro",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "name": "Diorite",
+    "symbol": "%",
+    "foreColor": "151:151:153",
+    "fillColor": "91:89:90",
+    "yields": [
+      {
+        "name": "Diorite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "name": "Granite",
+    "symbol": "%",
+    "foreColor": "214:158:131",
+    "fillColor": "149:87:62",
+    "yields": [
+      {
+        "name": "Granite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "name": "Serpentinate",
+    "symbol": "%",
+    "foreColor": "90:117:112",
+    "fillColor": "57:72:49",
+    "yields": [
+      {
+        "name": "Serpentinate",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Quartzite",
+    "symbol": "%",
+    "foreColor": "156:157:151",
+    "fillColor": "113:116:109",
+    "yields": [
+      {
+        "name": "Quartzite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Schist",
+    "symbol": "%",
+    "foreColor": "175:159:134",
+    "fillColor": "103:92:74",
+    "yields": [
+      {
+        "name": "Schist",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Marble",
+    "symbol": "%",
+    "foreColor": "228:202:169",
+    "fillColor": "184:174:173",
+    "yields": [
+      {
+        "name": "Marble",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Slate",
+    "symbol": "%",
+    "foreColor": "151:151:153",
+    "fillColor": "104:107:114",
+    "yields": [
+      {
+        "name": "Slate",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Gneiss",
+    "symbol": "%",
+    "foreColor": "154:141:109",
+    "fillColor": "97:89:66",
+    "yields": [
+      {
+        "name": "Gneiss",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Andesite",
+    "symbol": "%",
+    "foreColor": "191:179:165",
+    "fillColor": "123:115:104",
+    "yields": [
+      {
+        "name": "Andesite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Basalt",
+    "symbol": "%",
+    "foreColor": "104:91:85",
+    "fillColor": "54:45:40",
+    "yields": [
+      {
+        "name": "Basalt",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Komatiite",
+    "symbol": "%",
+    "foreColor": "176:126:129",
+    "fillColor": "114:70:67",
+    "yields": [
+      {
+        "name": "Komatiite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Rhyolite",
+    "symbol": "%",
+    "foreColor": "128:111:105",
+    "fillColor": "127:89:68",
+    "yields": [
+      {
+        "name": "Rhyolite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Conglomerate",
+    "symbol": "%",
+    "foreColor": "195:194:192",
+    "fillColor": "144:131:97",
+    "yields": [
+      {
+        "name": "Conglomerate",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Dolomite",
+    "symbol": "%",
+    "foreColor": "168:166:171",
+    "fillColor": "96:87:82",
+    "yields": [
+      {
+        "name": "Dolomite",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Limestone",
+    "symbol": "%",
+    "foreColor": "203:194:153",
+    "fillColor": "147:141:107",
+    "yields": [
+      {
+        "name": "Limestone",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Sandstone",
+    "symbol": "%",
+    "foreColor": "236:210:159",
+    "fillColor": "196:139:88",
+    "yields": [
+      {
+        "name": "Sandstone",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Wooden Door",
+    "isDoor": true,
+    "symbol": "┼",
+    "foreColor": "160:118:75",
+    "fillColor": "67:35:24"
+  },
+  {
+    "id": 301,
+    "name": "Heavy Wooden Door",
+    "isDoor": true,
+    "symbol": "┼",
+    "foreColor": "160:118:75",
+    "fillColor": "67:35:24"
+  }
+]

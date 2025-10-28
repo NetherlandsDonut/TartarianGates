@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Iron Shortsword",
+    "damage": 6,
+    "attackModifier": 1,
+    "defenceModifier": 1,
+    "length": 2
+  }
+]

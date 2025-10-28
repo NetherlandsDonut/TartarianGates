@@ -1,0 +1,67 @@
+[
+  {
+    "race": "Troll",
+    "name": "Warrior",
+    "description": [
+      "Hauler",
+      "Constructor"
+    ],
+    "bodySkills": {
+      "Attack": 5,
+      "Defence": 4,
+      "Precision": 5
+    },
+    "mindSkills": {
+      "Chaos": 0,
+      "Nature": 0,
+      "Sorcery": 0
+    },
+    "soulSkills": {
+      "Life": 0,
+      "Death": 0,
+      "Blood": 0
+    }
+  },
+  {
+    "race": "Dark Elf",
+    "name": "Assassin",
+    "starting": true,
+    "description": [
+      "Desc",
+      "Desc"
+    ],
+    "bodySkills": {
+      "Attack": 15,
+      "Defence": 14,
+      "Precision": 15
+    },
+    "mindSkills": {
+      "Chaos": 0,
+      "Nature": 0,
+      "Sorcery": 5
+    },
+    "soulSkills": {
+      "Life": 0,
+      "Death": 3,
+      "Blood": 3
+    }
+  },
+  {
+    "race": "Red Dragon",
+    "bodySkills": {
+      "Attack": 15,
+      "Defence": 14,
+      "Precision": 20
+    },
+    "mindSkills": {
+      "Chaos": 20,
+      "Nature": 5,
+      "Sorcery": 0
+    },
+    "soulSkills": {
+      "Life": 10,
+      "Death": 0,
+      "Blood": 0
+    }
+  }
+]
