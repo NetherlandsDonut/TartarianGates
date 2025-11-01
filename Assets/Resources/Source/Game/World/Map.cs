@@ -80,10 +80,10 @@ public class Map
             //Get neighboring cells of that connection cell
             var neighbors = new RoomCell[4]
             {
-                    map.preCells[i, j - 1],
-                    map.preCells[i + 1, j],
-                    map.preCells[i, j + 1],
-                    map.preCells[i - 1, j]
+                map.preCells[i, j - 1],
+                map.preCells[i + 1, j],
+                map.preCells[i, j + 1],
+                map.preCells[i - 1, j]
             };
 
             //If any neighbor of this connection tile is a null..
@@ -127,14 +127,14 @@ public class Map
 
         void RemoveInaccessibleWalls()
         {
-            for (int i = bounds.Item1; i < bounds.Item3; i++)
-                for (int j = bounds.Item3; j < bounds.Item4; j++)
+            for (int i = bounds.Item1; i <= bounds.Item2; i++)
+                for (int j = bounds.Item3; j <= bounds.Item4; j++)
                     if (map.preCells[i, j] != null && map.preCells[i, j].terrain.StartsWith("Wall"))
                     {
-                        if (map.preCells[i, j - 1] != null && map.preCells[i, j - 1].terrain.StartsWith("Floor")) continue;
-                        if (map.preCells[i, j + 1] != null && map.preCells[i, j + 1].terrain.StartsWith("Floor")) continue;
-                        if (map.preCells[i + 1, j] != null && map.preCells[i + 1, j].terrain.StartsWith("Floor")) continue;
-                        if (map.preCells[i - 1, j] != null && map.preCells[i - 1, j].terrain.StartsWith("Floor")) continue;
+                        if (map.preCells.XY(i, j - 1) != null && map.preCells.XY(i, j - 1).terrain.StartsWith("Floor")) continue;
+                        if (map.preCells.XY(i, j + 1) != null && map.preCells.XY(i, j + 1).terrain.StartsWith("Floor")) continue;
+                        if (map.preCells.XY(i + 1, j) != null && map.preCells.XY(i + 1, j).terrain.StartsWith("Floor")) continue;
+                        if (map.preCells.XY(i - 1, j) != null && map.preCells.XY(i - 1, j).terrain.StartsWith("Floor")) continue;
                         map.preCells[i, j] = null;
                     }
         }
@@ -146,7 +146,7 @@ public class Map
             while (plans[currentPlan].distribution.Any(x => x.Value > (overallDistribution[currentPlan].TryGetValue(x.Key, out int value) ? value : 0)))
             {
                 //If failure counter reached it's limit, cancel the operation
-                if (counter == 1000000) return false;
+                if (counter == 100000) return false;
 
                 //Generate what kind of room to generate now
                 var roomType = "";

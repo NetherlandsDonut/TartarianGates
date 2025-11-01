@@ -488,16 +488,16 @@ public class Screen
                         {
                             layout = "Cave", distribution = new()
                             {
-                                { "Room", 10 },
-                                { "Hall", 10 }
+                                { "Room", 3 },
+                                { "Hall", 3 }
                             }
                         },
                         new()
                         {
                             layout = "Crypt", distribution = new()
                             {
-                                { "Room", 10 },
-                                { "Hall", 10 }
+                                { "Room", 1 },
+                                { "Hall", 5 }
                             }
                         }
                     });
