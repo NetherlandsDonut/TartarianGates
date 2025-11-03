@@ -8,6 +8,24 @@ public class Map
 {
     public Map() { }
 
+    //Coordinates of the camera view on the map
+    public int mapViewX, mapViewY;
+
+    //Map seed for everything in it
+    public int seed;
+
+    //Cells of the map
+    public Cell[,] cells;
+
+    //Cells of the map before initialization
+    [NonSerialized] public Dictionary<(int, int), RoomCell> preCells;
+
+    //Tells the id for a new entity
+    public int newEntityID;
+
+    //List of all dynamic entities on the map
+    public List<Entity> entities;
+
     public static Map GenerateMap(List<Plan> plans)
     {
         int counter, currentPlan;
@@ -18,55 +36,34 @@ public class Map
         {
             counter = currentPlan = 0;
             overallDistribution = plans.Select(x => new Dictionary<string, int>()).ToList();
-            map = new Map { preCells = new RoomCell[3000, 3000] };
+            map = new Map { preCells = new() };
             for (; currentPlan < plans.Count; currentPlan++)
                 if (!GeneratePlan(plans[currentPlan])) break;
         }
         while (plans[^1].distribution.Any(x => x.Value > (overallDistribution[^1].ContainsKey(x.Key) ? overallDistribution[^1][x.Key] : 0)));
         foreach (var connection in freeConnections) ConvertConnection(connection);
-        var bounds = GetBounds();
-        FixFurniture();
-        RemoveInaccessibleWalls();
-        CropMap(map);
+        FixFurniture(map);
+        RemoveInaccessibleWalls(map);
         ConvertCells(map);
         return map;
 
         //Converts the pre cells into real cells on the map
         void ConvertCells(Map map)
         {
-            map.cells = new Cell[map.preCells.GetLength(0), map.preCells.GetLength(1)];
-            for (int i = 0; i < map.preCells.GetLength(0); i++)
-                for (int j = 0; j < map.preCells.GetLength(1); j++)
-                    map.cells[i, j] = new Cell(map.preCells[i, j]);
-        }
-
-        //Find the size of the generated map
-        (int, int, int, int) GetBounds()
-        {
             int minX = int.MaxValue, maxX = int.MinValue, minY = int.MaxValue, maxY = int.MinValue;
-            for (int i = 0; i < map.preCells.GetLength(0); i++)
-                for (int j = 0; j < map.preCells.GetLength(1); j++)
-                {
-                    var cell = map.preCells[i, j];
-                    if (cell != null)
-                    {
-                        if (minX > i) minX = i;
-                        if (maxX < i) maxX = i;
-                        if (minY > j) minY = j;
-                        if (maxY < j) maxY = j;
-                    }
-                }
-            return (minX, maxX, minY, maxY);
-        }
-
-        //Crops the map
-        void CropMap(Map map)
-        {
-            var croppedCells = new RoomCell[bounds.Item2 - bounds.Item1 + 3, bounds.Item4 - bounds.Item3 + 3];
-            for (int i = 0; i < croppedCells.GetLength(0); i++)
-                for (int j = 0; j < croppedCells.GetLength(1); j++)
-                    croppedCells[i, j] = map.preCells[i + bounds.Item1, j + bounds.Item3];
-            map.preCells = croppedCells;
+            foreach (var preCell in map.preCells.ToList())
+            {
+                if (minX > preCell.Key.Item1) minX = preCell.Key.Item1;
+                if (maxX < preCell.Key.Item1) maxX = preCell.Key.Item1;
+                if (minY > preCell.Key.Item2) minY = preCell.Key.Item2;
+                if (maxY < preCell.Key.Item2) maxY = preCell.Key.Item2;
+            }
+            map.cells = new Cell[maxX - minX + 1, maxY - minY + 1];
+            for (int i = 0; i < map.cells.GetLength(0); i++)
+                for (int j = 0; j < map.cells.GetLength(1); j++)
+                    if (map.preCells.ContainsKey((i + minX, j + minY)))
+                        map.cells[i, j] = new Cell(map.preCells[(i + minX, j + minY)]);
+                    else map.cells[i, j] = new Cell(null);
         }
 
         //Checks if a connection can be made into a solid wall
@@ -80,10 +77,10 @@ public class Map
             //Get neighboring cells of that connection cell
             var neighbors = new RoomCell[4]
             {
-                map.preCells[i, j - 1],
-                map.preCells[i + 1, j],
-                map.preCells[i, j + 1],
-                map.preCells[i - 1, j]
+                map.preCells.ContainsKey((i, j - 1)) ? map.preCells[(i, j - 1)] : null,
+                map.preCells.ContainsKey((i, j + 1)) ? map.preCells[(i, j + 1)] : null,
+                map.preCells.ContainsKey((i + 1, j)) ? map.preCells[(i + 1, j)] : null,
+                map.preCells.ContainsKey((i - 1, j)) ? map.preCells[(i - 1, j)] : null
             };
 
             //If any neighbor of this connection tile is a null..
@@ -91,7 +88,7 @@ public class Map
                 if (neighbors[k] == null)
                 {
                     //Change this floor tile into a wall
-                    var cell = map.preCells[i, j];
+                    var cell = map.preCells[(i, j)];
                     cell.terrain = cell.terrain.Replace("Floor", "Wall");
                     cell.prop = string.Empty;
                     cell.meta = string.Empty;
@@ -100,43 +97,53 @@ public class Map
         }
 
         //Remove doors that don't neighbor with exactly two empty cells
-        void FixFurniture()
+        void FixFurniture(Map map)
         {
             //Sadly this loop has to be run twice as some doors are double doors
             for (int z = 0; z < 2; z++)
-                for (int i = bounds.Item1; i < bounds.Item2; i++)
-                    for (int j = bounds.Item3; j < bounds.Item4; j++)
-                    {
-                        var cell = map.preCells[i, j];
-                        if (cell != null && cell.prop != null && cell.prop.StartsWith("Door"))
+                foreach (var preCell in map.preCells.ToList())
+                {
+                    var cell = preCell.Value;
+                    if (cell != null && cell.prop != null && cell.prop.StartsWith("Door #"))
+                    {   
+                        var i = preCell.Key.Item1;
+                        var j = preCell.Key.Item2;
+
+                        //Get neighboring cells of that connection cell
+                        var neighbors = new bool[4]
                         {
-                            bool up = map.preCells[i, j - 1] != null && map.preCells[i, j - 1].prop == null && map.preCells[i, j - 1].terrain.StartsWith("Floor");
-                            bool down = map.preCells[i, j + 1] != null && map.preCells[i, j + 1].prop == null && map.preCells[i, j + 1].terrain.StartsWith("Floor");
-                            bool right = map.preCells[i + 1, j] != null && map.preCells[i + 1, j].prop == null && map.preCells[i + 1, j].terrain.StartsWith("Floor");
-                            bool left = map.preCells[i - 1, j] != null && map.preCells[i - 1, j].prop == null && map.preCells[i - 1, j].terrain.StartsWith("Floor");
-                            var paths = 0;
-                            var emptyNeighbors = 0;
-                            if (up && down) paths++;
-                            else if (up || down) emptyNeighbors++;
-                            if (left && right) paths++;
-                            else if (left || right) emptyNeighbors++;
-                            if (paths != 1 || emptyNeighbors > 0) cell.prop = null;
-                        }
+                            map.preCells.ContainsKey((i, j - 1)) && map.preCells[(i, j - 1)].prop == null && map.preCells[(i, j - 1)].terrain.StartsWith("Floor"),
+                            map.preCells.ContainsKey((i, j + 1)) && map.preCells[(i, j + 1)].prop == null && map.preCells[(i, j + 1)].terrain.StartsWith("Floor"),
+                            map.preCells.ContainsKey((i + 1, j)) && map.preCells[(i + 1, j)].prop == null && map.preCells[(i + 1, j)].terrain.StartsWith("Floor"),
+                            map.preCells.ContainsKey((i - 1, j)) && map.preCells[(i - 1, j)].prop == null && map.preCells[(i - 1, j)].terrain.StartsWith("Floor")
+                        };
+
+                        var paths = 0;
+                        var emptyNeighbors = 0;
+                        if (neighbors[0] && neighbors[1]) paths++;
+                        else if (neighbors[0] || neighbors[1]) emptyNeighbors++;
+                        if (neighbors[3] && neighbors[2]) paths++;
+                        else if (neighbors[3] || neighbors[2]) emptyNeighbors++;
+                        if (paths != 1 || emptyNeighbors > 0) cell.prop = null;
                     }
+                }
         }
 
-        void RemoveInaccessibleWalls()
+        void RemoveInaccessibleWalls(Map map)
         {
-            for (int i = bounds.Item1; i <= bounds.Item2; i++)
-                for (int j = bounds.Item3; j <= bounds.Item4; j++)
-                    if (map.preCells[i, j] != null && map.preCells[i, j].terrain.StartsWith("Wall"))
-                    {
-                        if (map.preCells.XY(i, j - 1) != null && map.preCells.XY(i, j - 1).terrain.StartsWith("Floor")) continue;
-                        if (map.preCells.XY(i, j + 1) != null && map.preCells.XY(i, j + 1).terrain.StartsWith("Floor")) continue;
-                        if (map.preCells.XY(i + 1, j) != null && map.preCells.XY(i + 1, j).terrain.StartsWith("Floor")) continue;
-                        if (map.preCells.XY(i - 1, j) != null && map.preCells.XY(i - 1, j).terrain.StartsWith("Floor")) continue;
-                        map.preCells[i, j] = null;
-                    }
+            foreach (var preCell in map.preCells.ToList())
+                if (preCell.Value.terrain.StartsWith("Wall"))
+                {
+                    var i = preCell.Key.Item1;
+                    var j = preCell.Key.Item2;
+
+                    //Get neighboring cells of that connection cell
+                    if (map.preCells.ContainsKey((i, j - 1)) && map.preCells[(i, j - 1)].terrain.StartsWith("Floor")) continue;
+                    if (map.preCells.ContainsKey((i, j + 1)) && map.preCells[(i, j + 1)].terrain.StartsWith("Floor")) continue;
+                    if (map.preCells.ContainsKey((i + 1, j)) && map.preCells[(i + 1, j)].terrain.StartsWith("Floor")) continue;
+                    if (map.preCells.ContainsKey((i - 1, j)) && map.preCells[(i - 1, j)].terrain.StartsWith("Floor")) continue;
+                    map.preCells.Remove((i, j));
+                }
         }
 
         bool GeneratePlan(Plan plan)
@@ -225,7 +232,7 @@ public class Map
                 for (int j = 0; j < roomCells.GetLength(1); j++)
                 {
                     var newCell = roomCells[i, j];
-                    var oldCell = map.preCells[x + i, y + j];
+                    map.preCells.TryGetValue((x + i, y + j), out var oldCell);
                     if (newCell.terrain != null && oldCell != null)
                     {
                         //Can't place a room if a wall lands on something else than a wall
@@ -247,13 +254,15 @@ public class Map
                             if (freeConnections.Contains((x + i, y + j)))
                                 freeConnections.Remove((x + i, y + j));
                             else freeConnections.Add((x + i, y + j));
-                        map.preCells[x + i, y + j] = new()
+                        var newObj = new RoomCell()
                         {
                             terrain = newCell.terrain,
                             prop = newCell.prop,
                             meta = newCell.meta,
                             layoutUsed = layout
                         };
+                        if (!map.preCells.TryAdd((x + i, y + j), newObj))
+                            map.preCells[(x + i, y + j)] = newObj;
                     }
                 }
             return true;
@@ -307,24 +316,6 @@ public class Map
         newEntity.Prepare();
         return newEntity;
     }
-
-    //Coordinates of the camera view on the map
-    public int mapViewX, mapViewY;
-
-    //Map seed for everything in it
-    public int seed;
-
-    //Cells of the region
-    public Cell[,] cells;
-
-    //Cells of the region before initialization
-    [NonSerialized] public RoomCell[,] preCells;
-
-    //Tells the id for a new entity
-    public int newEntityID;
-
-    //List of all dynamic entities on the map
-    public List<Entity> entities;
 
     //Loads coordinates into cells
     public void PrepareCells()
