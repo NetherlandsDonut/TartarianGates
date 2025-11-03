@@ -296,6 +296,7 @@ public static class Core
     }
 
     //Indexes single dim array
+    public static bool IsInX<T>(this T[] array, int x) => !(x > array.GetLength(0) - 1 || x < 0);
     public static T X<T>(this T[] array, int x)
     {
         if (x > array.GetLength(0) - 1 || x < 0) return default;
@@ -303,6 +304,7 @@ public static class Core
     }
 
     //Indexes two dim array
+    public static bool IsInXY<T>(this T[,] array, int x, int y) => !(x > array.GetLength(0) - 1 || x < 0 || y > array.GetLength(1) - 1 || y < 0);
     public static T XY<T>(this T[,] array, int x, int y)
     {
         if (x > array.GetLength(0) - 1 || x < 0 || y > array.GetLength(1) - 1 || y < 0) return default;

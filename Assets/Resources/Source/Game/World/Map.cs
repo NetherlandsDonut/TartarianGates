@@ -263,35 +263,36 @@ public class Map
     //Prints the map on the chosen coords with specific size
     public void Print(int x, int y, int sizeX, int sizeY)
     {
-        for (int i = -sizeX / 2; i < sizeX / 2; i++)
-            for (int j = -sizeY / 2; j < sizeY / 2; j++)
+        for (int i = -sizeX / 2; i <= sizeX / 2; i++)
+            for (int j = -sizeY / 2; j <= sizeY / 2; j++)
             {
                 //Get the cell
                 var cell = cells.XY(i + mapViewX, j + mapViewY);
 
-                //If cell is out of bounds then proceed to the next one
-                if (cell == null) continue;
-
-                //Otherwise get print of the cell
-                var print = cell.GetPrint();
+                //Get print of the cell
+                var print = cell == null ? new() : cell.GetPrint();
 
                 //Draw the entities of this cell
-                if (cell.entities != null && cell.entities.Count > 0)
+                if (cell != null && cell.entities.Count > 0)
                     foreach (var entity in cell.entities)
                         WriteCell(entity.GetPrint());
 
                 //Draw the cell
                 else WriteCell(print);
 
+                //Writes the single tile cell of the map on the screen
                 void WriteCell(PreparedPrint print)
                 {
-                    bridge.WriteDialog(x + i + sizeX / 2, y + j + sizeY / 2, print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", () =>
-                    {
-                        mapViewX = cell.x;
-                        mapViewY = cell.y;
-                        return true;
-                    },
-                    () => print.foreColor, () => print.backColor);
+                    if (cell != null)
+                        bridge.WriteDialog(x + i + sizeX / 2, y + j + sizeY / 2, print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", () =>
+                        {
+                            mapViewX = cell.x;
+                            mapViewY = cell.y;
+                            return true;
+                        },
+                        () => print.foreColor, () => print.backColor);
+                    //else if ((i + mapViewX == cells.GetLength(0) || i + mapViewX == -1) && j + mapViewY >= -1 && j + mapViewY <= cells.GetLength(1) || (j + mapViewY == cells.GetLength(1) || j + mapViewY == -1) && i + mapViewX >= -1 && i + mapViewX <= cells.GetLength(0)) bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "X");
+                    //else bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "a");
                 }
             }
     }

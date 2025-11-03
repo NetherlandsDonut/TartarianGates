@@ -12,12 +12,14 @@ public class Cell
     {
         if (roomCell == null) return;
         var layout = roomCell.layoutUsed;
-        if (roomCell.prop != null && roomCell.prop.StartsWith("Door #"))
-            wall = new Wall(layout.convertion[roomCell.prop]);
-        else if (roomCell.terrain != null && roomCell.terrain.StartsWith("Wall #"))
-            wall = new Wall(layout.convertion[roomCell.terrain]);
-        else if (roomCell.terrain != null && roomCell.terrain.StartsWith("Floor #"))
-            ground = new Ground(layout.convertion[roomCell.terrain]);
+        if (roomCell.prop != null)
+            if (roomCell.prop.StartsWith("Door #"))
+                wall = new Wall(layout.convertion[roomCell.prop]);
+        if (roomCell.terrain != null)
+            if (roomCell.terrain.StartsWith("Wall #"))
+                wall = new Wall(layout.convertion[roomCell.terrain]);
+            else if (roomCell.terrain.StartsWith("Floor #"))
+                ground = new Ground(layout.convertion[roomCell.terrain]);
     }
 
     //The ground that is in this cell
@@ -69,10 +71,8 @@ public class Cell
     {
         var temp = new PreparedPrint();
         //if (!seenBy.Any(x => x.team == "Player")) temp = new(" ");
-        if (wall != null) temp = new(wall.symbol, wall.foreColor, wall.fillColor, false);
-        else if (ground != null && ground.mined && ground.liquid != null) { var liquidFind = GroundType.groundTypes.Find(x => x.liquid == ground.liquid); temp = new(liquidFind.symbol, liquidFind.foreColor, liquidFind.fillColor, false); }
-        else if (ground != null && ground.mined) temp = new(ground.symbolFilling ?? "·", ground.foreColorFilling ?? ground.foreColor, ground.foreColorFilling ?? ground.fillColor, false);
-        else if (ground != null) temp = new(ground.symbol, ground.foreColor, ground.fillColor, false);
+        if (wall != null) temp = wall.GetPrint();
+        else if (ground != null) temp = ground.GetPrint();
         else temp = new(" ");
         return temp;
     }

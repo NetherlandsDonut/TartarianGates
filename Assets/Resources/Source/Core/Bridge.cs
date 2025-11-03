@@ -44,9 +44,6 @@ public class Bridge : MonoBehaviour
     //Screen to which the next screen should point
     public string screenAfterwards;
 
-    //Set of dialog buttons that is currently active
-    public string dialogSetActive;
-
     //Coordinates of the camera view on the map
     public int mapViewX, mapViewY;
 
@@ -56,6 +53,9 @@ public class Bridge : MonoBehaviour
     //Temporary input for typing and
     //avoiding making chanes without confirmation
     public string temporaryInput;
+
+    //Context menu to be drawn on the screen
+    public Action contextMenu;
 
     #endregion
 
@@ -140,6 +140,15 @@ public class Bridge : MonoBehaviour
             foreach (var tile in tiles)
                 if (tile.foreground.sprite != null)
                     tile.Clear();
+    }
+
+    void ClearDialogs()
+    {
+        dialogs = new();
+        if (tiles != null)
+            foreach (var tile in tiles)
+                if (tile.dialogAsigned != null)
+                    tile.dialogAsigned = null;
     }
 
     void Clear(int x, int y, int length)
@@ -259,7 +268,6 @@ public class Bridge : MonoBehaviour
     {
         var temp = currentScreen;
         currentScreen = screens.Find(x => x.name == screen);
-        if (currentScreen != null) dialogSetActive = "";
         currentScreen ??= temp;
     }
 
@@ -275,6 +283,11 @@ public class Bridge : MonoBehaviour
     {
         ClearScreen();
         currentScreen.draw();
+        if (contextMenu != null)
+        {
+            ClearDialogs();
+            contextMenu.Invoke();
+        }
     }
 
     public void WriteBoxTile(int X, int Y, char what, string fore, string fill = "?", bool blinking = false)

@@ -29,10 +29,10 @@ public class Screen
     public static bool WentBack(string prevScreen = "None")
     {
         var didSomething = false;
-        if (Input.GetMouseButtonDown(1) && bridge.dialogSetActive != "")
+        if (Input.GetMouseButtonDown(1) && bridge.contextMenu != null)
         {
             PlaySound("DialogReturn");
-            bridge.dialogSetActive = "";
+            bridge.contextMenu = null;
             didSomething = true;
         }
         else if (Input.GetMouseButtonDown(1) && prevScreen != "None" && prevScreen != currentScreen.name)
@@ -317,14 +317,52 @@ public class Screen
         () =>
         {
             PlayAmbience("Wind", 0.2f, true);
-            var mapSizeX = screenX - 6;
-            var mapSizeY = screenY - 6;
-            new Box("TopLeft", "", "", false).SetWidth(mapSizeX + 2).SetHeight(mapSizeY + 2).Write("DoubleLine", new());
+            var mapSizeX = screenY - 11;
+            var mapSizeY = screenY - 11;
+            new Box("TopLeft", "Map View", "", false).SetWidth(mapSizeX + 2).SetHeight(mapSizeY + 2).Write("DoubleLine", new());
+            var templates = new List<LineTemplate>();
+            var templatesNames = new List<LineTemplate>();
+            var cell = Save.save.map.cells.XY(Save.save.map.mapViewX, Save.save.map.mapViewY);
+            foreach (var entity in cell.entities)
+            {
+                var print = entity.GetPrint();
+                templates.Add(new LineTemplate(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
+                templatesNames.Add(new LineTemplate(entity.name,
+                    () =>
+                    {
+                        return true;
+                    })
+                );
+            }
+            if (cell.wall != null)
+            {
+                var print = cell.wall.GetPrint();
+                templates.Add(new LineTemplate(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
+                templatesNames.Add(new LineTemplate(cell.wall.name,
+                    () =>
+                    {
+                        return true;
+                    })
+                );
+            }
+            if (cell.ground != null)
+            {
+                var print = cell.ground.GetPrint();
+                templates.Add(new LineTemplate(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
+                templatesNames.Add(new LineTemplate(cell.ground.name,
+                    () =>
+                    {
+                        return true;
+                    })
+                );
+            }
+            new Box("TopRight", "Inspector", "Left", false).SetWidth(screenX - 7 - mapSizeX).SetHeight(mapSizeY + 2).Write("DoubleLine", templates);
+            new Box("TopRight", "", "Left", false).SetWidth(screenX - 7 - mapSizeX - 2).SetHeight(mapSizeY + 2).Write("", templatesNames);
             Save.save.map.Print(3, 3, mapSizeX, mapSizeY);
         },
         (didSomething) =>
         {
-            if (WentBack("MainMenu")) didSomething = true;
+            if (WentBack("GameMenu")) didSomething = true;
             return didSomething;
         }),
 

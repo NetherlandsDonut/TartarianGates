@@ -79,6 +79,7 @@ public class Tile : MonoBehaviour
         if (replaceLast && appearances.Count > 0) appearances.RemoveAt(appearances.Count - 1);
         newDraw.blinking = blinking;
         newDraw.crossed = glyph != '∮' && crossed;
+        //this.dialogAsigned = null;
         appearances.Add(newDraw);
         UpdateVisual(true);
     }

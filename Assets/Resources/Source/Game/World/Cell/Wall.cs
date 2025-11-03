@@ -31,6 +31,9 @@ public class Wall
         if (health == find.health) health = 0;
     }
 
+    //Gets the visual of the wall
+    public PreparedPrint GetPrint() => new(symbol, foreColor, fillColor, false);
+
     //ID of the prop this refers to
     public int id;
 
