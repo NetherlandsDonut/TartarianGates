@@ -28,8 +28,19 @@ public class Cell
     //The wall that is in this cell
     public Wall wall;
 
+    //Whether this cell was seen at least once by the player
+    public bool explored;
+
     //Cell this entity can see where it is
     [NonSerialized] public List<Entity> seenBy;
+
+    //Makes this cell seen for chosen entity
+    public void MakeSeenFor(Entity entity)
+    {
+        if (entity.team == "Player")
+            explored = true;
+        seenBy.Add(entity);
+    }
 
     public bool WillFit(Entity entity) => entities.Sum(x => x.stats["Size"]) + entity.stats["Size"] <= 6;
     public bool IsWalkable() => (wall == null || wall.isDoor & wall.opened) && ground != null && ground.liquid == null;
@@ -70,10 +81,16 @@ public class Cell
     public PreparedPrint GetPrint()
     {
         var temp = new PreparedPrint();
-        if (!seenBy.Any(x => x.team == "Player")) temp = new(" ");
+        var seenATM = seenBy.Any(x => x.team == "Player");
+        if (!explored && !seenATM) temp = new(" ");
         else if (wall != null) temp = wall.GetPrint();
         else if (ground != null) temp = ground.GetPrint();
         else temp = new(" ");
+        if (explored && !seenATM)
+        {
+            temp.foreColor = "50:50:102";
+            temp.backColor = "20:20:51";
+        }
         return temp;
     }
 

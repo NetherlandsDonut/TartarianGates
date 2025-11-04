@@ -24,13 +24,6 @@ public class Wall
         fillColor = find.fillColor;
     }
 
-    //Unloads unnessecary data from the cell
-    public void FlushData()
-    {
-        var find = WallType.wallTypes.Find(x => x.id == id);
-        if (health == find.health) health = 0;
-    }
-
     //Gets the visual of the wall
     public PreparedPrint GetPrint() => new(symbol, foreColor, fillColor, false);
 

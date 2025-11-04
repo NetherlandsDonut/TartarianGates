@@ -7,7 +7,7 @@ public class Save
 {
     public static Save NewSave()
     {
-        var newSave = new Save();
+        var newSave = new Save() { date = DateTime.Now };
         return newSave;
     }
 
@@ -52,6 +52,14 @@ public class Save
     {
         //Set this as the new current save
         save = this;
+
+        //Prepares the map if it's active
+        if (map != null)
+        {
+            map.PrepareMap();
+            map.AsignMapData();
+            map.PrepareEntities();
+        }
     }
 
     //Closes the game

@@ -177,7 +177,7 @@ public class Entity
                         }
                     }
         foreach (var cell in cellsSeen)
-            cell.seenBy.Add(this);
+            cell.MakeSeenFor(this);
     }
 
     //Make a step through one unit of time with AI on this entity

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -46,6 +46,7 @@ public class Map
         RemoveInaccessibleWalls(map);
         ConvertCells(map);
         map.PrepareMap();
+        map.entities = new();
         return map;
 
         //Converts the pre cells into real cells on the map
@@ -304,8 +305,8 @@ public class Map
                             return true;
                         },
                         () => print.foreColor, () => print.backColor);
-                    else if ((i + mapViewX == cells.GetLength(0) || i + mapViewX == -1) && j + mapViewY >= -1 && j + mapViewY <= cells.GetLength(1) || (j + mapViewY == cells.GetLength(1) || j + mapViewY == -1) && i + mapViewX >= -1 && i + mapViewX <= cells.GetLength(0)) bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "X");
-                    else bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "a");
+                    else if ((i + mapViewX == cells.GetLength(0) || i + mapViewX == -1) && j + mapViewY >= -1 && j + mapViewY <= cells.GetLength(1) || (j + mapViewY == cells.GetLength(1) || j + mapViewY == -1) && i + mapViewX >= -1 && i + mapViewX <= cells.GetLength(0)) bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "█");
+                    else bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "▒");
                 }
             }
     }
@@ -339,7 +340,6 @@ public class Map
     //Prepares the map for the game
     public void PrepareMap()
     {
-        entities = new();
         for (var i = 0; i < cells.GetLength(0); i++)
             for (var j = 0; j < cells.GetLength(1); j++)
             {
@@ -351,35 +351,8 @@ public class Map
             }
     }
 
-    //Updates whether the cells can be seen from the active entities
-    public void UpdateCellVisibility()
-    {
-        foreach (var entity in entities)
-            entity.CalculateLOS();
-    }
-
-    //Moves camera view by amounts
-    public void MoveView(int X, int Y, int Z)
-    {
-        mapViewX += X;
-        mapViewY += Y;
-    }
-
-    //Loads coordinates into cells
-    public void PrepareEntities()
-    {
-        foreach (var entity in entities)
-            entity.Prepare();
-    }
-
     //Loads entities into cells
-    public void AsignEntities()
-    {
-        entities.ForEach(x => x.AsignCell(this));
-    }
-
-    //Loads entities into cells
-    public void AsignPropData()
+    public void AsignMapData()
     {
         foreach (var cell in cells)
         {
@@ -388,14 +361,19 @@ public class Map
         }
     }
 
-    //Unloads unnessecary data from the world
-    public void FlushData()
+    //Updates whether the cells can be seen from the active entities
+    //Moves camera view by amounts
+    public void MoveView(int X, int Y)
     {
-        foreach (var cell in cells)
-        {
-            cell.wall?.FlushData();
-            cell.ground?.FlushData();
-        }
+        mapViewX += X;
+        mapViewY += Y;
+    }
+
+    //Loads entities into cells
+    public void PrepareEntities()
+    {
+        entities.ForEach(x => x.AsignCell(this));
+        entities.ForEach(x => x.CalculateLOS());
     }
 }
 

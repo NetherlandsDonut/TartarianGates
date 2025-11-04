@@ -463,7 +463,7 @@ public class Screen
             Save loadedSave = null;
             Serialization.Deserialize(ref loadedSave, bridge.gameToLoad, true, "Saves");
             loadedSave.Load();
-            bridge.SetScreen("GameMap");
+            bridge.SetScreen("Game");
             return true;
         }),
         

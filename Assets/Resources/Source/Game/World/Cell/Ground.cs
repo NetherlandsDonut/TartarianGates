@@ -22,14 +22,6 @@ public class Ground
         if (health == 0) health = find.health;
     }
 
-    //Unloads unnessecary data from the cell
-    public void FlushData()
-    {
-        var find = GroundType.groundTypes.Find(x => x.id == id);
-        if (liquid == find.liquid) liquid = null;
-        if (health == find.health) health = 0;
-    }
-
     //Gets the visual of the ground
     public PreparedPrint GetPrint() => new(symbol, foreColor, fillColor, false);
 
