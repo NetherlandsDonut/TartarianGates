@@ -32,9 +32,9 @@ public class Cell
     [NonSerialized] public List<Entity> seenBy;
 
     public bool WillFit(Entity entity) => entities.Sum(x => x.stats["Size"]) + entity.stats["Size"] <= 6;
-    public bool IsWalkable() => wall == null && ground != null && ground.liquid == null;
-    public bool IsSwimmable() => wall == null && ground != null && ground.liquid != null;
-    public bool CanSeeThrough() => wall == null || wall.seeThrough;
+    public bool IsWalkable() => (wall == null || wall.isDoor & wall.opened) && ground != null && ground.liquid == null;
+    public bool IsSwimmable() => (wall == null || wall.isDoor & wall.opened) && ground != null && ground.liquid != null;
+    public bool CanSeeThrough() => wall == null || wall.isDoor & wall.opened || wall.seeThrough;
 
     //Get all cells you can reach from this one
     public List<Cell> GetAdjacentLocations(bool cardinals, bool diagonals)
@@ -70,8 +70,8 @@ public class Cell
     public PreparedPrint GetPrint()
     {
         var temp = new PreparedPrint();
-        //if (!seenBy.Any(x => x.team == "Player")) temp = new(" ");
-        if (wall != null) temp = wall.GetPrint();
+        if (!seenBy.Any(x => x.team == "Player")) temp = new(" ");
+        else if (wall != null) temp = wall.GetPrint();
         else if (ground != null) temp = ground.GetPrint();
         else temp = new(" ");
         return temp;

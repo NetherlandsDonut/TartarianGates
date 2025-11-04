@@ -45,6 +45,7 @@ public class Map
         FixFurniture(map);
         RemoveInaccessibleWalls(map);
         ConvertCells(map);
+        map.PrepareMap();
         return map;
 
         //Converts the pre cells into real cells on the map
@@ -58,11 +59,11 @@ public class Map
                 if (minY > preCell.Key.Item2) minY = preCell.Key.Item2;
                 if (maxY < preCell.Key.Item2) maxY = preCell.Key.Item2;
             }
-            map.cells = new Cell[maxX - minX + 1, maxY - minY + 1];
+            map.cells = new Cell[maxX - minX + 3, maxY - minY + 3];
             for (int i = 0; i < map.cells.GetLength(0); i++)
                 for (int j = 0; j < map.cells.GetLength(1); j++)
-                    if (map.preCells.ContainsKey((i + minX, j + minY)))
-                        map.cells[i, j] = new Cell(map.preCells[(i + minX, j + minY)]);
+                    if (map.preCells.ContainsKey((i + minX - 1, j + minY - 1)))
+                        map.cells[i, j] = new Cell(map.preCells[(i + minX - 1, j + minY - 1)]);
                     else map.cells[i, j] = new Cell(null);
         }
 
@@ -73,6 +74,9 @@ public class Map
             //Get connection coords
             var i = connection.Item1;
             var j = connection.Item2;
+
+            //If the connection points to null, quit immediately
+            //if (map.preCells.ContainsKey((i, j))) return;
 
             //Get neighboring cells of that connection cell
             var neighbors = new RoomCell[4]
@@ -300,8 +304,8 @@ public class Map
                             return true;
                         },
                         () => print.foreColor, () => print.backColor);
-                    //else if ((i + mapViewX == cells.GetLength(0) || i + mapViewX == -1) && j + mapViewY >= -1 && j + mapViewY <= cells.GetLength(1) || (j + mapViewY == cells.GetLength(1) || j + mapViewY == -1) && i + mapViewX >= -1 && i + mapViewX <= cells.GetLength(0)) bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "X");
-                    //else bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "a");
+                    else if ((i + mapViewX == cells.GetLength(0) || i + mapViewX == -1) && j + mapViewY >= -1 && j + mapViewY <= cells.GetLength(1) || (j + mapViewY == cells.GetLength(1) || j + mapViewY == -1) && i + mapViewX >= -1 && i + mapViewX <= cells.GetLength(0)) bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "X");
+                    else bridge.Write(x + i + sizeX / 2, y + j + sizeY / 2, "a");
                 }
             }
     }
@@ -314,12 +318,28 @@ public class Map
         entities.Add(newEntity);
         newEntity.AsignCell(this);
         newEntity.Prepare();
+        newEntity.CalculateLOS();
         return newEntity;
     }
 
     //Loads coordinates into cells
-    public void PrepareCells()
+    public void SpawnPlayerParty()
     {
+        foreach (var entity in Save.save.playerParty)
+            foreach (var cell in cells)
+                if (cell.ground != null)
+                {
+                    SpawnNewEntity(cell.x, cell.y, entity);
+                    mapViewX = cell.x;
+                    mapViewY = cell.y;
+                    break;
+                }
+    }
+
+    //Prepares the map for the game
+    public void PrepareMap()
+    {
+        entities = new();
         for (var i = 0; i < cells.GetLength(0); i++)
             for (var j = 0; j < cells.GetLength(1); j++)
             {
@@ -327,6 +347,7 @@ public class Map
                 cell.x = i;
                 cell.y = j;
                 cell.entities = new();
+                cell.seenBy = new();
             }
     }
 

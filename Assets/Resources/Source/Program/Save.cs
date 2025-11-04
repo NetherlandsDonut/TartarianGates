@@ -7,7 +7,7 @@ public class Save
 {
     public static Save NewSave()
     {
-        var newSave = new Save { };
+        var newSave = new Save();
         return newSave;
     }
 
@@ -20,14 +20,23 @@ public class Save
     //Party of the player
     public List<Entity> playerParty;
 
-    //Finalizes creation of the new save file
-    public void FinalizeCreation()
+    //Finalizes creation of the new save file and the player character
+    public Entity FinalizeStartingCharacter()
     {
-        playerParty = new() { new Entity(bridge.creationName, bridge.creationGender, bridge.creationRace, bridge.creationBackground) };
+        playerParty = new();
+        var playerChar = new Entity(bridge.creationName, bridge.creationGender, bridge.creationRace, bridge.creationBackground);
         bridge.creationName = "";
         bridge.creationGender = "";
         bridge.creationRace = "";
         bridge.creationBackground = "";
+        return playerChar;
+    }
+
+    //Adds a new entity to the player party
+    public void AddEntityToPlayerParty(Entity entity)
+    {
+        entity.team = "Player";
+        playerParty.Add(entity);
     }
 
     //Name of this save

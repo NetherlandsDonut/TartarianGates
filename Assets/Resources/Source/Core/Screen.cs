@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.UIElements;
+
 using static Core;
 using static Sound;
 
@@ -320,14 +320,15 @@ public class Screen
             var mapSizeX = screenY - 11;
             var mapSizeY = screenY - 11;
             new Box("TopLeft", "Map View", "", false).SetWidth(mapSizeX + 2).SetHeight(mapSizeY + 2).Write("DoubleLine", new());
+            Save.save.map.Print(3, 3, mapSizeX, mapSizeY);
             var templates = new List<LineTemplate>();
             var templatesNames = new List<LineTemplate>();
             var cell = Save.save.map.cells.XY(Save.save.map.mapViewX, Save.save.map.mapViewY);
             foreach (var entity in cell.entities)
             {
                 var print = entity.GetPrint();
-                templates.Add(new LineTemplate(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
-                templatesNames.Add(new LineTemplate(entity.name,
+                templates.Add(new(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
+                templatesNames.Add(new(entity.name,
                     () =>
                     {
                         return true;
@@ -337,8 +338,8 @@ public class Screen
             if (cell.wall != null)
             {
                 var print = cell.wall.GetPrint();
-                templates.Add(new LineTemplate(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
-                templatesNames.Add(new LineTemplate(cell.wall.name,
+                templates.Add(new(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
+                templatesNames.Add(new(cell.wall.name,
                     () =>
                     {
                         return true;
@@ -348,17 +349,25 @@ public class Screen
             if (cell.ground != null)
             {
                 var print = cell.ground.GetPrint();
-                templates.Add(new LineTemplate(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
-                templatesNames.Add(new LineTemplate(cell.ground.name,
+                templates.Add(new(print.symbol[(cell.x + cell.y / 2) % print.symbol.Length] + "", null, () => print.foreColor, () => print.backColor));
+                templatesNames.Add(new(cell.ground.name,
                     () =>
                     {
                         return true;
                     })
                 );
             }
-            new Box("TopRight", "Inspector", "Left", false).SetWidth(screenX - 7 - mapSizeX).SetHeight(mapSizeY + 2).Write("DoubleLine", templates);
-            new Box("TopRight", "", "Left", false).SetWidth(screenX - 7 - mapSizeX - 2).SetHeight(mapSizeY + 2).Write("", templatesNames);
-            Save.save.map.Print(3, 3, mapSizeX, mapSizeY);
+            new Box("TopRight", "Inspector", "Left", false).SetWidth(screenX - 7 - mapSizeX).Write("DoubleLine", templates);
+            new Box("TopRight", "", "Left", false).SetWidth(screenX - 7 - mapSizeX - 2).Write("", templatesNames);
+            var offset = templates.Count + 2;
+            templates = new()
+            {
+                new("Move up", () => { Save.save.map.entities[0].OpenDoor(0, -1); Save.save.map.entities[0].Move(0, -1); return true; }),
+                new("Move right", () => { Save.save.map.entities[0].OpenDoor(1, 0); Save.save.map.entities[0].Move(1, 0); return true; }),
+                new("Move down", () => { Save.save.map.entities[0].OpenDoor(0, 1); Save.save.map.entities[0].Move(0, 1); return true; }),
+                new("Move left", () => { Save.save.map.entities[0].OpenDoor(-1, 0); Save.save.map.entities[0].Move(-1, 0); return true; })
+            };
+            new Box("BottomRight", "Actions", "Left", false).Offset(0, 5).SetWidth(screenX - 7 - mapSizeX).Write("DoubleLine", templates);
         },
         (didSomething) =>
         {
@@ -413,7 +422,7 @@ public class Screen
         },
         (didSomething) =>
         {
-            if (WentBack(bridge.currentGameScreen)) didSomething = true;
+            if (WentBack("Game")) didSomething = true;
             return didSomething;
         }),
         
@@ -475,7 +484,7 @@ public class Screen
             else if (bridge.screenAfterwards == "Quit")
                 Application.Quit();
             else if (bridge.screenAfterwards == "GoBack")
-                bridge.SetScreen(bridge.currentGameScreen);
+                bridge.SetScreen("Game");
             return true;
         }),
 
@@ -520,27 +529,28 @@ public class Screen
                 new(""),
                 new("Finalize", () =>
                 {
+                    Save.save.AddEntityToPlayerParty(Save.save.FinalizeStartingCharacter());
                     Save.save.map = Map.GenerateMap(new()
                     {
                         new()
                         {
                             layout = "Cave", distribution = new()
                             {
-                                { "Room", 3 },
-                                { "Hall", 3 }
+                                { "Room", 20 },
+                                { "Hall", 20 }
                             }
                         },
                         new()
                         {
                             layout = "Crypt", distribution = new()
                             {
-                                { "Room", 1 },
-                                { "Hall", 5 }
+                                { "Room", 20 },
+                                { "Hall", 20 }
                             }
                         }
                     });
-                    Save.save.map.PrepareCells();
-                    Save.save.FinalizeCreation();
+                    Save.save.map.PrepareMap();
+                    Save.save.map.SpawnPlayerParty();
                     bridge.SetScreen("Game");
                     return true;
                 }),

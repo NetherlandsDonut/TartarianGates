@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 
 using static Core;
+using System.Diagnostics;
 
 public class Entity
 {
@@ -134,27 +135,47 @@ public class Entity
         var sightRange = 10;
         for (int i = -sightRange; i <= sightRange; i++)
             for (int j = -sightRange; j <= sightRange; j++)
-                if (Math.Sqrt(i * i + j * j) <= sightRange)
-                {
-                    var aimCell = cell.NeighboringCell(i, j);
-                    if (aimCell == null) continue;
-                    var biggest = MathF.Abs(Math.Abs(i) > Math.Abs(j) ? i : j);
-                    float curX = 0f, curY = 0f, curXR, curYR;
-                    var result = "";
-                    while (result != "None" && (MathF.Round(curX) != i || MathF.Round(curY) != j))
+                for (int k = 0; k < 2; k++)
+                    if (Math.Sqrt(i * i + j * j) <= sightRange)
                     {
-                        curXR = curX > 0 ? MathF.Floor(curX) : MathF.Ceiling(curX);
-                        curYR = curY > 0 ? MathF.Floor(curY) : MathF.Ceiling(curY);
-                        var checkedCell = cell.NeighboringCell((int)curXR, (int)curYR);
-                        if (checkedCell != null && checkedCell.CanSeeThrough())
+                        var aimCell = cell.NeighboringCell(i, j);
+                        if (aimCell == null) continue;
+                        if (cellsSeen.Contains(aimCell)) continue;
+                        var biggest = MathF.Abs(Math.Abs(i) > Math.Abs(j) ? i : j);
+                        float curX = 0f, curY = 0f, curXR = 0, curYR = 0;
+                        if (k == 0) while (true)
                         {
-                            curX += i / biggest;
-                            curY += j / biggest;
+                            curXR = curX > 0 ? MathF.Floor(curX) : MathF.Ceiling(curX);
+                            var checkedCell = cell.NeighboringCell((int)curXR, (int)curYR);
+                            if (checkedCell == aimCell) { cellsSeen.Add(aimCell); break; }
+                            else if (checkedCell != null && checkedCell.CanSeeThrough())
+                            {
+                                curX += i / biggest;
+                                curYR = curY > 0 ? MathF.Floor(curY) : MathF.Ceiling(curY);
+                                checkedCell = cell.NeighboringCell((int)curXR, (int)curYR);
+                                if (checkedCell == aimCell) { cellsSeen.Add(aimCell); break; }
+                                else if (checkedCell != null && checkedCell.CanSeeThrough()) curY += j / biggest;
+                                else break;
+                            }
+                            else break;
                         }
-                        else result = "None";
+                        else while (true)
+                        {
+                            curYR = curY > 0 ? MathF.Floor(curY) : MathF.Ceiling(curY);
+                            var checkedCell = cell.NeighboringCell((int)curXR, (int)curYR);
+                            if (checkedCell == aimCell) { cellsSeen.Add(aimCell); break; }
+                            else if (checkedCell != null && checkedCell.CanSeeThrough())
+                            {
+                                curY += j / biggest;
+                                curXR = curX > 0 ? MathF.Floor(curX) : MathF.Ceiling(curX);
+                                checkedCell = cell.NeighboringCell((int)curXR, (int)curYR);
+                                if (checkedCell == aimCell) { cellsSeen.Add(aimCell); break; }
+                                else if (checkedCell != null && checkedCell.CanSeeThrough()) curX += i / biggest;
+                                else break;
+                            }
+                            else break;
+                        }
                     }
-                    if (result != "None") cellsSeen.Add(aimCell);
-                }
         foreach (var cell in cellsSeen)
             cell.seenBy.Add(this);
     }
@@ -308,6 +329,33 @@ public class Entity
             cell = newCell;
             x += X;
             y += Y;
+            CalculateLOS();
+            return true;
+        }
+        return false;
+    }
+
+    //Opens the door in direction from the entity
+    public bool OpenDoor(int X, int Y)
+    {
+        var newCell = cell.NeighboringCell(X, Y);
+        if (newCell != null && newCell.wall != null && newCell.wall.isDoor && !newCell.wall.opened)
+        {
+            newCell.wall.opened = true;
+            CalculateLOS();
+            return true;
+        }
+        return false;
+    }
+
+    //Closes the door in direction from the entity
+    public bool CloseDoor(int X, int Y)
+    {
+        var newCell = cell.NeighboringCell(X, Y);
+        if (newCell != null && newCell.wall != null && newCell.wall.isDoor && newCell.wall.opened)
+        {
+            newCell.wall.opened = false;
+            CalculateLOS();
             return true;
         }
         return false;

@@ -39,9 +39,6 @@ public class Bridge : MonoBehaviour
     public string oldMapName;
 
     //Screen to which the next screen should point
-    public string currentGameScreen;
-
-    //Screen to which the next screen should point
     public string screenAfterwards;
 
     //Coordinates of the camera view on the map
